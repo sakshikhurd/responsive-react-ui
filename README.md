@@ -1,28 +1,77 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-# React + Vite
+# Brickfolio 99Rs Consultation Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a responsive React JS landing page created for the Brickfolio 99Rs Consultation design assignment. The page is based on the provided Figma design and focuses on presenting a home-buying consultation offer with clear sections, strong call-to-action buttons, service highlights, testimonials, FAQs, and pricing information.
 
-Currently, two official plugins are available:
+##Project Overview
+The landing page is designed for users who are confused about the home-buying process, including taxes, fees, hidden costs, loan options, property value, and financing terms. The goal of the page is to encourage users to book a personalized consultation for Rs. 99.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+##Features
+- Fully responsive landing page for desktop, tablet, and mobile screens
+- React JS based component structure
+- Clean and reusable code organization
+- Figma-inspired layout, spacing, typography, and visual styling
+- Hero section with consultation offer and booking CTA
+- "What You'll Get" benefits section
+- Home-buying challenges section
+- Statistics section with buyer numbers, ratings, and property expert count
+- Target audience section explaining who the program is for
+- "Why Choose Brickfolio?" service highlights
+- Testimonials and Google rating section
+- 100% money-back offer section
+- FAQ section
+- Sticky or prominent final schedule CTA
 
-## React Compiler
+##Skills Used
+- React JS
+- CSS Modules
+- Responsive Web Design
+- Component-Based UI Development
+  
+##Installation and Setup
+Follow these steps to run the project locally:
+1. Clone the repository
+   git clone <https://github.com/sakshikhurd/responsive-react-ui>
+2. Install dependencies
+   npm install
+3. Start the development server
+   npm start
+   or, if the project uses Vite:
+   npm run dev
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+##Folder Structure
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# responsive-react-ui
->>>>>>> 02c84bf4a295bc463a9f606647c0f1443d5992c5
-=======
-# responsive-react-ui
->>>>>>> b8a09017a183b6e8e104524030a981af0ede014c
-=======
-# responsive-react-ui
->>>>>>> 6b2ba12a8a6b66dce7c344f2ef3b29ecb41f7c57
+BrickFolio/
+└── brickfolio-ui/
+    ├── public/
+    │   ├── favicon.svg
+    │   └── icons.svg
+    │
+    ├── src/
+    │   ├── assets/
+    │   ├── components/
+    │   │   ├── HeroConsultation/
+    │   │   ├── Benefits/
+    │   │   ├── Challenges/
+    │   │   ├── Stats/
+    │   │   ├── ProgramFor/
+    │   │   ├── WhyChoose/
+    │   │   ├── Testimonials/
+    │   │   ├── MoneyBackSection/
+    │   │   ├── FAQ/
+    │   │   └── ScheduleBanner/
+    │   │
+    │   ├── App.jsx
+    │   ├── App.css
+    │   ├── index.css
+    │   └── main.jsx
+    │
+    ├── index.html
+    ├── package.json
+    └── vite.config.js
+    
+##Responsive Design
+The page is designed to work across:
+- Mobile devices
+- Tablets
+- Desktop and laptop screens
+- Responsive styling is used to maintain proper spacing, alignment, readability, and user experience on different screen sizes.
