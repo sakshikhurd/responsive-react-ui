@@ -1,0 +1,179 @@
+.section {
+  width: 100%;
+  padding: 0 32px 110px;
+  margin-top: 140px;
+  background: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+  width: min(1344px, 100%);
+  min-height: 504px;
+  margin: 0 auto;
+  border-radius: 0 24px 24px 0;
+  background: #fee6d6;
+  display: grid;
+  grid-template-columns: 624px 1fr;
+  overflow: hidden;
+}
+
+.leftCard {
+  min-height: 504px;
+  padding: 58px 40px 48px;
+  border-radius: 24px;
+  background: #ff7a00;
+  color: #ffffff;
+}
+
+.leftCard h2 {
+  margin: 0 0 28px;
+  font-size: 48px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.leftCard p {
+  max-width: 574px;
+  margin: 0;
+  font-size: 29px;
+  line-height: 1.31;
+  font-weight: 400;
+}
+
+.leftCard button {
+  width: 366px;
+  height: 80px;
+  margin-top: 46px;
+  border: 0;
+  border-radius: 17px;
+  background: #ffffff;
+  color: #000000;
+  font-family: inherit;
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.rightCard {
+  padding: 44px 40px;
+}
+
+.rightCard h3 {
+  margin: 0 0 30px;
+  color: #000000;
+  font-size: 34px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.accordion {
+  width: 100%;
+  max-width: 640px;
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  width: 100%;
+  overflow: hidden;
+  background: #f5f5f5;
+  border-top: 1px solid #d9d9d9;
+}
+
+.item:first-child {
+  border-radius: 6px 6px 0 0;
+}
+
+.item:last-child {
+  border-radius: 0 0 6px 6px;
+}
+
+.question {
+  width: 100%;
+  min-height: 54px;
+  padding: 16px;
+  border: 0;
+  background: #f5f5f5;
+  color: #1e1e1e;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.question span:last-child {
+  flex: 0 0 auto;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.answer {
+  margin: 0;
+  padding: 0 16px 18px;
+  background: #ffffff;
+  color: #1e1e1e;
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+@media (max-width: 1100px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    border-radius: 24px;
+  }
+
+  .leftCard {
+    min-height: auto;
+  }
+
+  .rightCard {
+    padding: 40px;
+  }
+
+  .accordion {
+    max-width: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .section {
+    padding: 0 18px 72px;
+  }
+
+  .leftCard,
+  .rightCard {
+    padding: 32px 24px;
+  }
+
+  .leftCard h2 {
+    font-size: 34px;
+  }
+
+  .leftCard p {
+    font-size: 20px;
+  }
+
+  .leftCard button {
+    width: 100%;
+    height: 64px;
+    margin-top: 32px;
+    font-size: 26px;
+  }
+
+  .rightCard h3 {
+    font-size: 28px;
+  }
+
+  .question,
+  .answer {
+    font-size: 14px;
+  }
+}

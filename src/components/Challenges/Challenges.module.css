@@ -1,0 +1,301 @@
+.challengesSection {
+  width: 100%;
+  background: #ffffff;
+  padding: 92px 20px 88px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.challengesContainer {
+  width: 100%;
+  max-width: 1268px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.subHeading {
+  margin: 0;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 100%;
+  color: #2f3845;
+}
+
+.heading {
+  margin: 16px 0 70px;
+  font-weight: 700;
+  font-size: 53px;
+  line-height: 100%;
+  color: #2f3845;
+}
+
+.challengeGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 615px);
+  gap: 28px 40px;
+  justify-content: center;
+  text-align: left;
+}
+
+.challengeCard {
+  width: 615px;
+  height: 221px;
+
+  display: flex;
+  align-items: flex-start;
+
+  padding: 54px 38px 0 48px;
+  box-sizing: border-box;
+
+  border: 1px solid #d8d3d3;
+  border-radius: 10px;
+  background: #fafafa;
+}
+
+.iconNumberGroup {
+  width: 96px;
+  height: 76px;
+
+  display: flex;
+  align-items: flex-start;
+
+  position: relative;
+  flex-shrink: 0;
+}
+
+.iconCircle {
+  width: 73px;
+  height: 73px;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background: rgba(33, 96, 252, 0.1);
+}
+
+.iconCircle::before {
+  content: "";
+  width: 56px;
+  height: 56px;
+
+  position: absolute;
+
+  border-radius: 50%;
+  border: 2px solid rgba(33, 96, 252, 0.28);
+  box-sizing: border-box;
+}
+
+.icon {
+  width: 42px;
+  height: 42px;
+
+  position: relative;
+  z-index: 1;
+
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+.numberCircle {
+  width: 31px;
+  height: 31px;
+
+  position: absolute;
+  top: 0;
+  left: 62px;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background: #ffebf1;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 100%;
+  color: #000000;
+}
+
+.content {
+  margin-left: 8px;
+}
+
+.cardTitle {
+  width: 397px;
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 100%;
+  color: #000000;
+}
+
+.cardText {
+  width: 433px;
+  margin: 28px 0 0;
+
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 100%;
+  color: #000000;
+}
+
+.challengeBtn {
+  width: 723px;
+  height: 103px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 64px auto 0;
+
+  border: none;
+  border-radius: 15px;
+  padding: 10px;
+  gap: 10px;
+
+  background: linear-gradient(90deg, #ee6d62 0%, #e95f5d 100%);
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: 0%;
+
+  color: #ffffff;
+
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1300px) {
+  .challengeGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .challengeCard {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .challengesSection {
+    padding: 80px 24px;
+  }
+
+  .challengeGrid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .challengeCard {
+    width: 100%;
+    max-width: 615px;
+    margin: 0 auto;
+  }
+
+  .challengeBtn {
+    width: 100%;
+    max-width: 650px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .challengesSection {
+    padding: 70px 20px;
+  }
+
+  .subHeading {
+    font-size: 30px;
+    line-height: 120%;
+  }
+
+  .heading {
+    font-size: 36px;
+    line-height: 115%;
+    margin-bottom: 45px;
+  }
+
+  .challengeCard {
+    height: auto;
+    min-height: 190px;
+    padding: 34px 24px;
+  }
+
+  .iconNumberGroup {
+    transform: scale(0.78);
+    transform-origin: top left;
+    margin-right: -18px;
+  }
+
+  .cardTitle {
+    width: 100%;
+    font-size: 19px;
+    line-height: 120%;
+  }
+
+  .cardText {
+    width: 100%;
+    margin-top: 16px;
+    font-size: 17px;
+    line-height: 135%;
+  }
+
+  .challengeBtn {
+    height: 72px;
+    font-size: 22px;
+    padding: 0 18px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .challengesSection {
+    padding: 58px 16px;
+  }
+
+  .subHeading {
+    font-size: 25px;
+  }
+
+  .heading {
+    font-size: 30px;
+  }
+
+  .challengeCard {
+    padding: 24px 16px;
+    min-height: 175px;
+  }
+
+  .iconNumberGroup {
+    transform: scale(0.68);
+    margin-right: -26px;
+  }
+
+  .content {
+    margin-left: 6px;
+  }
+
+  .cardTitle {
+    font-size: 18px;
+  }
+
+  .cardText {
+    font-size: 16px;
+  }
+
+  .challengeBtn {
+    height: auto;
+    min-height: 64px;
+    font-size: 19px;
+    line-height: 120%;
+  }
+}
