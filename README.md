@@ -38,8 +38,9 @@ Follow these steps to run the project locally:
    or, if the project uses Vite:
    npm run dev
 
-##Folder Structure
+## Folder Structure
 
+```txt
 BrickFolio/
 └── brickfolio-ui/
     ├── public/
@@ -68,6 +69,7 @@ BrickFolio/
     ├── index.html
     ├── package.json
     └── vite.config.js
+```
     
 ##Responsive Design
 The page is designed to work across:
